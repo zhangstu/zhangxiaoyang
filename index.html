@@ -7,103 +7,93 @@
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://zhangstu.github.io/zhangxiaoyang/" />
     <title>Xiaoyang Zhang | NTU Sustainable Computing</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
     <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230f2925'/%3E%3Cpath d='M17 16h30v8H30v7h14v8H30v9h18v8H17z' fill='%2378d4a5'/%3E%3C/svg%3E" />
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Xiaoyang Zhang","alternateName":["Zhang Xiaoyang","zhangxiaoyang"],"url":"https://zhangstu.github.io/zhangxiaoyang/","jobTitle":"Research Scientist","affiliation":{"@type":"Organization","name":"Nanyang Technological University"},"alumniOf":[{"@type":"Organization","name":"The Hong Kong Polytechnic University"},{"@type":"Organization","name":"Polytechnic University of Turin"},{"@type":"Organization","name":"Xi'an Jiaotong University"}],"email":"xiaoyang.zhang@connect.polyu.hk","knowsAbout":["Sustainable Computing","Carbon-efficient Computing","Sustainable AI","Carbon Accounting"]}</script>
     <style>
-      :root { --ink: #102320; --green: #1d8a62; --mint: #a9e3c8; --paper: #f9faf7; --line: #dbe3dd; --muted: #61736d; }
+      :root { --navy: #35455d; --ink: #252a31; --blue: #063f99; --red: #ad312d; --line: #e1e3e6; --paper: #fff; --muted: #5f6773; }
       * { box-sizing: border-box; }
       html { scroll-behavior: smooth; }
-      body { margin: 0; background: var(--paper); color: var(--ink); font-family: "Plus Jakarta Sans", Arial, sans-serif; line-height: 1.65; }
-      a { color: inherit; text-decoration-color: #82b69f; text-underline-offset: 3px; }
-      a:hover { color: var(--green); }
-      .page { max-width: 1240px; margin: 0 auto; padding: 0 48px; display: grid; grid-template-columns: 305px minmax(0, 1fr); gap: 86px; }
-      .rail { position: sticky; top: 0; height: 100vh; padding: 55px 0 42px; display: flex; flex-direction: column; }
-      h1 { font: 500 clamp(2.4rem, 4vw, 3.55rem)/.98 "Newsreader", Georgia, serif; letter-spacing: -.04em; margin: 0 0 16px; }
-      .role { font-size: .92rem; color: var(--muted); max-width: 260px; margin: 0 0 26px; }
-      .rule { height: 1px; background: var(--line); width: 100%; margin: 0 0 24px; }
-      nav { display: grid; gap: 7px; }
-      nav a { text-decoration: none; color: #40534c; font-size: .84rem; font-weight: 600; letter-spacing: .03em; }
-      nav a::before { content: "—"; color: var(--mint); margin-right: 9px; transition: color .2s; }
-      nav a:hover::before { color: var(--green); }
-      .contact { margin-top: auto; font-size: .77rem; color: var(--muted); }
-      .contact a { display: block; margin-top: 3px; }
-      main { min-width: 0; padding: 58px 0 110px; }
-      .intro { border-bottom: 1px solid var(--line); padding: 6px 0 42px; margin-bottom: 48px; }
-      .intro p { font: 1.04rem/1.75 "Plus Jakarta Sans", sans-serif; max-width: 690px; margin: 0; }
-      section { scroll-margin-top: 24px; margin: 0 0 59px; }
-      .section-label { display: flex; align-items: baseline; gap: 14px; margin: 0 0 20px; }
-      .section-num { color: var(--green); font: 500 .74rem "DM Mono", monospace; }
-      h3 { font: 600 1rem "Plus Jakarta Sans", sans-serif; letter-spacing: .06em; text-transform: uppercase; margin: 0; }
-      .news { list-style: none; padding: 0; margin: 0; border-top: 1px solid var(--line); }
-      .news li { padding: 14px 0; border-bottom: 1px solid var(--line); font-size: .94rem; }
-      .date { color: var(--green); font: 500 .73rem "DM Mono", monospace; display: inline-block; width: 72px; vertical-align: 1px; }
-      .interests { display: flex; flex-wrap: wrap; gap: 9px; margin: 0; padding: 0; list-style: none; }
-      .interests li { border: 1px solid #b7ccc1; border-radius: 999px; padding: 6px 12px; color: #36564a; font-size: .84rem; }
-      .pub-list { list-style: none; padding: 0; margin: 0; counter-reset: publications; }
-      .pub-list li { counter-increment: publications; position: relative; padding: 0 0 21px 38px; margin-bottom: 19px; border-bottom: 1px solid var(--line); font-size: .91rem; line-height: 1.72; }
-      .pub-list li::before { content: counter(publications, decimal-leading-zero); position: absolute; left: 0; top: 2px; color: var(--green); font: 500 .71rem "DM Mono", monospace; }
-      .venue { color: var(--green); font-weight: 700; }
-      .authorship { color: #38584c; font-size: .79rem; font-weight: 700; letter-spacing: .07em; text-transform: uppercase; margin: 0 0 16px; }
-      .timeline { display: grid; gap: 0; border-top: 1px solid var(--line); }
-      .timeline article { display: grid; grid-template-columns: 116px 1fr; gap: 22px; padding: 16px 0; border-bottom: 1px solid var(--line); }
-      .timeline time { color: var(--green); font: 500 .74rem "DM Mono", monospace; padding-top: 3px; }
-      .timeline h4 { margin: 0 0 3px; font-size: .93rem; line-height: 1.42; }
-      .timeline p { margin: 0; color: var(--muted); font-size: .86rem; line-height: 1.56; }
-      .service { margin: 0; padding-left: 19px; font-size: .92rem; }
-      .service li { margin: 8px 0; padding-left: 4px; }
-      footer { border-top: 1px solid var(--line); padding-top: 22px; color: var(--muted); font: .72rem "DM Mono", monospace; }
-      @media (max-width: 800px) { .page { display: block; padding: 0 23px; } .rail { position: relative; height: auto; padding: 33px 0 25px; } h1 { font-size: 2.65rem; } nav { grid-template-columns: repeat(3, max-content); column-gap: 17px; row-gap: 5px; margin-top: 5px; } .contact { margin-top: 25px; display: flex; gap: 16px; flex-wrap: wrap; } .contact a { margin: 0; } main { padding: 25px 0 72px; } .intro { padding-bottom: 37px; margin-bottom: 38px; } section { margin-bottom: 46px; } .timeline article { grid-template-columns: 86px 1fr; gap: 12px; } }
-      @media (max-width: 430px) { nav { grid-template-columns: repeat(2, max-content); } .date { display: block; margin-bottom: 2px; } .timeline article { grid-template-columns: 1fr; gap: 2px; } }
+      body { margin: 0; background: var(--paper); color: var(--ink); font: 400 17px/1.58 Arial, Helvetica, sans-serif; }
+      a { color: var(--blue); font-weight: 700; text-decoration: none; }
+      a:hover { text-decoration: underline; text-underline-offset: 3px; }
+      .site-header { background: var(--navy); color: #f8f9fb; }
+      .nav-shell { max-width: 1122px; min-height: 78px; margin: 0 auto; padding: 0 36px; display: flex; align-items: center; justify-content: space-between; gap: 34px; }
+      .brand { margin: 0; color: #f8f9fb; font-size: clamp(1.65rem, 2.1vw, 2.2rem); font-weight: 400; letter-spacing: -.03em; white-space: nowrap; }
+      .brand a { color: inherit; font-weight: inherit; }
+      .brand strong { font-weight: 700; }
+      nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 30px; }
+      nav a { color: #f8f9fb; font-size: 1.16rem; font-weight: 400; }
+      nav a:first-child, nav a:hover { color: #cf4a43; text-decoration: none; }
+      .content { width: min(100% - 144px, 1050px); margin: 0 auto; padding: 52px 0 78px; }
+      .intro { padding: 8px 0 48px; border-bottom: 2px solid var(--line); }
+      .intro-copy { max-width: none; }
+      h1:not(.brand) { margin: 0 0 12px; color: var(--ink); font-size: clamp(2rem, 3vw, 2.85rem); line-height: 1.1; letter-spacing: -.035em; }
+      .role { margin: 0 0 22px; font-size: 1.05rem; color: var(--muted); }
+      .intro p { margin: 0; font-size: clamp(1.06rem, 1.35vw, 1.22rem); line-height: 1.62; }
+      .contact { margin-top: 28px; font-size: 1.05rem; }
+      .contact span { font-weight: 700; }
+      section { scroll-margin-top: 30px; padding: 27px 0 29px; border-bottom: 2px solid var(--line); }
+      h2 { margin: 0 0 17px; color: var(--red); font-size: clamp(1.5rem, 2vw, 1.95rem); line-height: 1.15; letter-spacing: -.025em; }
+      .news, .service { margin: 0; padding-left: 29px; }
+      .news li, .service li { margin: 10px 0; padding-left: 8px; }
+      .date { display: inline-block; min-width: 95px; color: var(--muted); font-weight: 700; }
+      .interests { display: flex; flex-wrap: wrap; gap: 10px; margin: 0; padding: 0; list-style: none; }
+      .interests li { border: 1px solid #bdc6d2; border-radius: 3px; padding: 6px 11px; color: #39485c; font-size: .98rem; }
+      .authorship { margin: -4px 0 18px; color: var(--muted); font-size: .92rem; }
+      .pub-list { margin: 0; padding-left: 32px; }
+      .pub-list li { margin: 0 0 16px; padding-left: 5px; line-height: 1.58; }
+      .venue { color: var(--blue); font-weight: 700; }
+      sup { color: var(--red); font-size: .75em; font-weight: 700; }
+      footer { padding-top: 25px; color: var(--muted); font-size: .92rem; }
+      @media (max-width: 900px) { .nav-shell { min-height: auto; padding: 22px 24px; align-items: flex-start; flex-direction: column; gap: 15px; } nav { justify-content: flex-start; gap: 12px 22px; } nav a { font-size: 1.05rem; } .content { width: min(100% - 48px, 1350px); padding-top: 42px; } }
+      @media (max-width: 560px) { body { font-size: 16px; } .nav-shell { padding: 19px 21px; } .content { width: min(100% - 42px, 1660px); padding: 30px 0 55px; } .intro { padding: 0 0 38px; } .intro p { font-size: 1.08rem; } .date { min-width: 0; margin-right: 8px; } .news, .service, .pub-list { padding-left: 23px; } }
     </style>
   </head>
   <body>
-    <div class="page">
-      <aside class="rail" aria-label="Site navigation">
-        <h1>Xiaoyang<br />Zhang</h1>
-        <p class="role">Research Scientist<br />Alibaba-NTU Global e-Sustainability CorpLab</p>
-        <div class="rule"></div>
-        <nav>
-          <a href="#about">About</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#career">Career &amp; education</a><a href="#service">Service</a>
+    <header class="site-header">
+      <div class="nav-shell">
+        <h1 class="brand"><a href="#about"><strong>Xiaoyang</strong> Zhang</a></h1>
+        <nav aria-label="Primary navigation">
+          <a href="#about">About</a><a href="#news">News</a><a href="#research">Research</a><a href="#publications">Publications</a><a href="#service">Service</a>
         </nav>
-        <div class="contact"><span>Get in touch</span><a href="mailto:xiaoyang.zhang@connect.polyu.hk">xiaoyang.zhang@connect.polyu.hk</a></div>
-      </aside>
-      <main>
-        <header class="intro" id="about">
-          <p>I am a Research Scientist at the Alibaba-NTU Global e-Sustainability CorpLab, Nanyang Technological University (NTU), supervised by Prof. Yonggang Wen. My work sits at the intersection of sustainable computing, carbon-efficient computing, and sustainable AI—from forecasting grid carbon intensity to accounting for the carbon footprint of large AI models and computer systems.</p>
-        </header>
-        <section aria-labelledby="news-heading">
-          <div class="section-label"><span class="section-num">01</span><h3 id="news-heading">Recent news</h3></div>
-          <ul class="news"><li><span class="date">May 2026</span>Joined the Alibaba-NTU Global e-Sustainability CorpLab as a Research Scientist.</li><li><span class="date">2026</span>Two first-author papers accepted by <strong>The ACM Web Conference 2026</strong>.</li><li><span class="date">2025</span>First-author work accepted by <strong>NeurIPS 2025</strong> and <strong>IEEE Transactions on Computers</strong>.</li></ul>
-        </section>
-        <section id="research" aria-labelledby="research-heading">
-          <div class="section-label"><span class="section-num">02</span><h3 id="research-heading">Research</h3></div>
-          <ul class="interests"><li>Sustainable Computing</li><li>Carbon-efficient Computing</li><li>Sustainable AI</li><li>Carbon Accounting</li><li>Carbon Intensity Forecasting</li><li>Graph Neural Networks</li></ul>
-        </section>
-        <section id="publications" aria-labelledby="pub-heading">
-          <div class="section-label"><span class="section-num">03</span><h3 id="pub-heading">Selected publications</h3></div>
-          <p class="authorship"><strong>First/Corresponding author</strong></p>
-          <ol class="pub-list">
+      </div>
+    </header>
+    <main class="content">
+      <header class="intro" id="about">
+        <div class="intro-copy">
+          <h2>About me</h2>
+          <p class="role">Research Scientist · Nanyang Technological University</p>
+          <p>I am a Research Scientist at Nanyang Technological University, supervised by Prof. Yonggang Wen. I was a postdoctoral fellow at Hong Kong Polytechnic University in 2026. I received my Ph.D. in Computing from The Hong Kong Polytechnic University in January 2026, supervised by Prof. Dan Wang. I also hold a master's degree from the Polytechnic University of Turin and a bachelor's degree from Xi'an Jiaotong University. My research lies at the intersection of sustainable computing, carbon-aware computing, and AI for energy and sustainability.</p>
+          <div class="contact"><span>Get in touch</span> <a href="mailto:xiaoyang.zhang@connect.polyu.hk">xiaoyang.zhang@connect.polyu.hk</a></div>
+        </div>
+      </header>
+      <section id="news" aria-labelledby="news-heading">
+        <h2 id="news-heading">Recent news</h2>
+        <ul class="news"><li><span class="date">2026</span>Joined Nanyang Technological University (NTU) as a Research Scientist.</li><li><span class="date">2026</span>Two first-author papers accepted by The ACM Web Conference 2026.</li><li><span class="date">2026</span>One corresponding-author paper accepted by IEEE Transactions on Dependable and Secure Computing.</li><li><span class="date">2025</span>First-author work accepted by NeurIPS 2025 and IEEE Transactions on Computers.</li></ul>
+      </section>
+      <section id="research" aria-labelledby="research-heading">
+        <h2 id="research-heading">Research</h2>
+        <ul class="interests"><li>Sustainable Computing</li><li>Carbon-efficient Computing</li><li>Sustainable AI</li><li>Carbon Accounting</li><li>Carbon Intensity Forecasting</li><li>Graph Neural Networks</li></ul>
+      </section>
+      <section id="publications" aria-labelledby="pub-heading">
+        <h2 id="pub-heading">Selected publications</h2>
+        <p class="authorship"><strong>First/Corresponding author</strong></p>
+        <ol class="pub-list">
             <li><strong>Xiaoyang Zhang</strong>, Taiqi Zhou, Fang He, Yang Deng, and Dan Wang. “Toward Green Computing: General Carbon Intensity Forecasting via Dual Graph Empowered Time Series Foundation Model.” <span class="venue">The ACM Web Conference (WWW), 2026.</span></li>
             <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “Fairer AI Carbon Accounting: Incorporating Market-based Attribution and Uncertainty in Embodied and Operational Carbon Footprint.” <span class="venue">The ACM Web Conference (WWW), 2026.</span></li>
+            <li>Fang He, <strong>Xiaoyang Zhang</strong><sup>*</sup>, Y. Tao, and J. Yuan. “FLCarbon: A Close Look Into the Operational Carbon and Embodied Carbon of Federated Learning.” <span class="venue">IEEE Transactions on Dependable and Secure Computing, 2026.</span></li>
             <li><strong>Xiaoyang Zhang</strong>, Fang He, Yang Deng, and Dan Wang. “Unveiling the Uncertainty in Embodied and Operational Carbon of Large AI Models through a Probabilistic Carbon Accounting Model.” <span class="venue">NeurIPS, 2025.</span></li>
             <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-Temporal Embodied Carbon Models with Dual Carbon Attribution for Embodied Carbon Accounting of Computer Systems.” <span class="venue">IEEE Transactions on Computers, 2025.</span></li>
             <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A Node-aware Graph Neural Network-based Carbon Intensity Forecasting Model for Cross-border Power Grids.” <span class="venue">Computers in Industry, 180, 104516.</span></li>
             <li><strong>Xiaoyang Zhang</strong>, Yijie Yang, and Dan Wang. “Spatial-temporal Embodied Carbon Models for the Embodied Carbon Accounting of Computer Systems.” <span class="venue">ACM e-Energy, 2024.</span></li>
-          </ol>
-        </section>
-        <section id="career" aria-labelledby="career-heading">
-          <div class="section-label"><span class="section-num">04</span><h3 id="career-heading">Career &amp; education</h3></div>
-          <p>Xiaoyang Zhang is a Research Scientist at the Alibaba-NTU Global e-Sustainability CorpLab, Nanyang Technological University (NTU). Before joining NTU, he was a Postdoctoral Researcher in the Department of Computing at The Hong Kong Polytechnic University (PolyU), where he received his Ph.D. in Computing in January 2026 under the supervision of Prof. Dan Wang. He holds a master’s degree in Communication and Computer Networks from the Polytechnic University of Turin and a bachelor’s degree in Optical Information Science and Technology from Xi’an Jiaotong University. Previously, he worked as a Data Analyst in the Knowledge Graph Group at ICBC Software Development Center and as an Algorithm Engineer in Huawei’s Consumer BG Communication Protocol Technology Department.</p>
-        </section>
-        <section id="service" aria-labelledby="service-heading">
-          <div class="section-label"><span class="section-num">05</span><h3 id="service-heading">Academic service</h3></div>
-          <ul class="service"><li>Program Committee Member, The ACM Web Conference 2026, Web for Good Track</li><li>Program Committee Member, WESys Workshop at ACM BuildSys 2025</li></ul>
-        </section>
-        <footer>© 2026 Xiaoyang Zhang · Last updated September 2026</footer>
-      </main>
-    </div>
+            <li><strong>Xiaoyang Zhang</strong> and Dan Wang. “A GNN-based Day Ahead Carbon Intensity Forecasting Model for Cross-Border Power Grids.” <span class="venue">ACM e-Energy, 2023.</span></li>
+        </ol>
+      </section>
+      <section id="service" aria-labelledby="service-heading">
+        <h2 id="service-heading">Academic service</h2>
+        <ul class="service"><li>Program Committee Member, The ACM Web Conference 2026, Web for Good Track</li><li>Program Committee Member, WESys Workshop at ACM BuildSys 2025</li></ul>
+      </section>
+      <footer>© 2026 Xiaoyang Zhang · Last updated September 2026</footer>
+    </main>
   </body>
 </html>
